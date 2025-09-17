@@ -21,7 +21,7 @@ const Services = () => {
       title: 'Live Trading Signals',
       description: 'Real-time binary options signals with entry points, expiry times, and profit targets.',
       features: ['95%+ win rate', 'Real-time alerts', '24/5 market coverage', 'Multi-asset signals'],
-      price: '$97/month',
+      price: 'Free',
       popular: true,
     },
     {
@@ -29,7 +29,7 @@ const Services = () => {
       title: 'Trading Education',
       description: 'Comprehensive courses covering technical analysis, risk management, and psychology.',
       features: ['Video tutorials', 'Strategy guides', 'Market analysis', 'Trading psychology'],
-      price: '$197 one-time',
+      price: 'Free',
       popular: false,
     },
     {
@@ -37,7 +37,7 @@ const Services = () => {
       title: 'VIP Community',
       description: 'Exclusive access to private Telegram group with 24/7 support and advanced signals.',
       features: ['Private community', 'Priority support', 'Advanced signals', 'Weekly webinars'],
-      price: '$297/month',
+      price: 'Free',
       popular: false,
     },
   ];
@@ -116,13 +116,10 @@ const Services = () => {
               </ul>
 
               <Button 
-                className={`w-full ${service.popular 
-                  ? 'bg-gradient-accent text-accent-foreground hover:shadow-glow' 
-                  : 'bg-primary text-primary-foreground hover:bg-primary/90'
-                }`}
+                className="w-full bg-gradient-accent text-accent-foreground hover:shadow-glow"
                 size="lg"
               >
-                Get Started
+                Access Now
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Card>

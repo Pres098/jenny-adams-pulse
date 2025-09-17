@@ -39,7 +39,7 @@ const Education = () => {
       students: '850+',
       rating: 4.8,
       level: 'Advanced',
-      price: '$97',
+      price: 'Free',
       features: [
         'Chart pattern recognition',
         'Advanced indicators',
@@ -54,7 +54,7 @@ const Education = () => {
       students: '950+',
       rating: 4.9,
       level: 'Intermediate',
-      price: '$67',
+      price: 'Free',
       features: [
         'Trading psychology',
         'Emotional control',
@@ -155,12 +155,9 @@ const Education = () => {
               </ul>
 
               <Button 
-                className={`w-full ${course.price === 'Free' 
-                  ? 'bg-gradient-accent text-accent-foreground hover:shadow-glow' 
-                  : 'bg-primary text-primary-foreground hover:bg-primary/90'
-                }`}
+                className="w-full bg-gradient-accent text-accent-foreground hover:shadow-glow"
               >
-                {course.price === 'Free' ? 'Start Learning' : 'Enroll Now'}
+                Start Learning
               </Button>
             </Card>
           ))}
